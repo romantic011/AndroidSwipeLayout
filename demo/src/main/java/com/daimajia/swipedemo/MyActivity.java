@@ -107,10 +107,10 @@ public class MyActivity extends Activity {
             }
         });
         sample3.findViewById(R.id.star).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MyActivity.this, "Yo!", Toast.LENGTH_SHORT).show();
-            }
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(MyActivity.this, "Yo!", Toast.LENGTH_SHORT).show();
+                }
         });
 
     }

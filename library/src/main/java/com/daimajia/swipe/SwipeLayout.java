@@ -54,7 +54,6 @@ public class SwipeLayout extends FrameLayout {
     public SwipeLayout(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         mDragHelper = ViewDragHelper.create(this, mDragHelperCallback);
-
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SwipeLayout);
         int ordinal = a.getInt(R.styleable.SwipeLayout_drag_edge, DragEdge.Right.ordinal());
         mDragEdge = DragEdge.values()[ordinal];
